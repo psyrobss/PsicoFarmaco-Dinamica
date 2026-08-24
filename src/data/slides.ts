@@ -223,7 +223,7 @@ Assim, o elemento central da figura é a comparação entre eficácia máxima: o
       "Médio Prazo (Semanas): Down-regulation. Resposta a agonistas constantes causa redução do número de receptores.",
       "Longo Prazo (Meses): Up-regulation. Resposta a antagonistas constantes faz o cérebro aumentar receptores (hipersensibilidade)."
     ],
-    imageUrl: new URL('../assets/images/neuroplasticidade-adaptacao.jpg', import.meta.url).href,
+    imageUrl: new URL('../../assets/images/neuroplasticidade-adaptacao.jpg', import.meta.url).href,
     imageAlt: "Diagrama cronológico das adaptações sinápticas da neuroplasticidade: estado inicial, ação aguda, down-regulation e up-regulation",
     audioDescription: "A imagem mostra três estágios do fator tempo no cérebro. No início, a sinapse é equilibrada. Com uso agudo de fármaco por dias, há bloqueios ou superestimulação. A médio prazo, ocorre down-regulation, reduzindo os receptores para tolerância. A longo prazo com bloqueio, ocorre up-regulation, multiplicando receptores e causando hipersensibilidade.",
     psychologyNote: "Isso explica por que o ansiolítico 'para de fazer o mesmo efeito' com o tempo — e por que suspender de golpe produz efeito rebote grave."
