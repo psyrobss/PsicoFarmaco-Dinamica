@@ -364,7 +364,7 @@ Em resumo: a figura mostra um receptor de sete passagens pela membrana, ativado 
       "Cetamina: NMDA - Antagonista não competitivo."
     ],
     imageUrl: '../../assets/images/alvo-receptor.jpg',
-    imageAlt: "Painel médico com representações de exames ou mapas complexos",
+    imageAlt: "Tabela relacionando classes de psicofármacos aos seus receptores-alvo: antipsicóticos, ISRS, benzodiazepínicos e cetamina",
     audioDescription: "A tabela relaciona antipsicóticos ao bloqueio do receptor D2, ISRS à inibição do transportador SERT, benzodiazepínicos à modulação do canal GABAA e cetamina ao bloqueio do canal NMDA. Mostra que o mesmo alvo determina efeitos terapêuticos e colaterais.",
     psychologyNote: "Este mapa é a bússola para ler qualquer prescrição: alvo + tipo de receptor preveem velocidade e efeitos."
   },
