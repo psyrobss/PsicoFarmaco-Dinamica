@@ -247,7 +247,7 @@ Assim, o elemento central da figura é a comparação entre eficácia máxima: o
       "A subunidade alfa se dissocia e ativa ou inibe efetores (como a adenilciclase).",
       "Vias principais: Gs (estimula cAMP), Gi (inibe cAMP), Gq (ativa cálcio via IP3/DAG)."
     ],
-    imageUrl: "https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?auto=format&fit=crop&w=800&q=80",
+    imageUrl: "../../assets/images/mecanismo-acao-gpcr.jpg",
     imageAlt: "Diagrama esquemático do mecanismo de ação de um receptor acoplado à proteína G",
     audioDescription: `Audiodescrição detalhada da imagem
 
@@ -363,7 +363,7 @@ Em resumo: a figura mostra um receptor de sete passagens pela membrana, ativado 
       "Benzodiazepínicos: GABAA - Modulador Alostérico.",
       "Cetamina: NMDA - Antagonista não competitivo."
     ],
-    imageUrl: "https://images.unsplash.com/photo-1631556097152-c3132e4822bc?auto=format&fit=crop&w=800&q=80",
+    imageUrl: "../../assets/images/alvo-receptor.jpg",
     imageAlt: "Painel médico com representações de exames ou mapas complexos",
     audioDescription: "A tabela relaciona antipsicóticos ao bloqueio do receptor D2, ISRS à inibição do transportador SERT, benzodiazepínicos à modulação do canal GABAA e cetamina ao bloqueio do canal NMDA. Mostra que o mesmo alvo determina efeitos terapêuticos e colaterais.",
     psychologyNote: "Este mapa é a bússola para ler qualquer prescrição: alvo + tipo de receptor preveem velocidade e efeitos."
