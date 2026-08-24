@@ -35,7 +35,7 @@ export const slides: Slide[] = [
       "A enzima ou receptor é a 'fechadura' (Sítio Ativo Complementar).",
       "Apenas moléculas com a forma correta se encaixam e causam o efeito biológico. Moléculas que não se encaixam não ativam o receptor."
     ],
-    imageUrl: new URL('../assets/images/modelo-chave-fechadura.jpg', import.meta.url).href,
+    imageUrl: new URL('../../assets/images/modelo-chave-fechadura.jpg', import.meta.url).href,
     imageAlt: "Diagrama ilustrando o modelo chave-fechadura com enzimas e receptores",
     audioDescription: "A imagem mostra a analogia da chave e fechadura. A chave representa uma molécula com forma única. A fechadura representa o local de encaixe no receptor. Moléculas com formato adequado se encaixam, ativando a célula e causando reações. Moléculas de formato diferente são repelidas e não ativam o receptor.",
     psychologyNote: "A especificidade é o que permite que uma medicação aja em uma área do cérebro sem desligar o cérebro inteiro."
@@ -49,7 +49,7 @@ export const slides: Slide[] = [
       "Vesículas sinápticas se fundem à membrana e liberam neurotransmissores na fenda sináptica.",
       "Eles se conectam a receptores específicos no dendrito pós-sináptico, abrindo canais de íons e gerando um novo sinal elétrico."
     ],
-    imageUrl: new URL('../assets/images/sinapse-comunicacao.jpg', import.meta.url).href,
+    imageUrl: new URL('../../assets/images/sinapse-comunicacao.jpg', import.meta.url).href,
     imageAlt: "Diagrama mostrando a liberação de neurotransmissores na fenda sináptica entre o axônio e o dendrito",
     audioDescription: "A imagem ilustra um neurônio pré-sináptico liberando neurotransmissores de vesículas na fenda sináptica. O sinal elétrico chega, o cálcio entra e as vesículas liberam as moléculas. Essas moléculas se ligam aos receptores no neurônio pós-sináptico, permitindo a entrada de sódio e gerando um novo sinal elétrico.",
   },
@@ -63,7 +63,7 @@ export const slides: Slide[] = [
       "GABA: Principal inibitório. Reduz a atividade neural.",
       "Glutamato: Principal excitatório. Essencial para aprendizado e memória."
     ],
-    imageUrl: new URL('../assets/images/sinapses-neurotransmissores.jpg', import.meta.url).href,
+    imageUrl: new URL('../../assets/images/sinapses-neurotransmissores.jpg', import.meta.url).href,
     imageAlt: "Comparativo entre a estrutura da sinapse e os principais neurotransmissores (Serotonina, Dopamina, GABA, Glutamato)",
     audioDescription: "A imagem faz um comparativo visual. À esquerda, a sinapse converte sinais elétricos em sinais químicos de forma unidirecional. À direita, detalha quatro neurotransmissores principais que atuam como chaves nesses receptores: Serotonina, Dopamina, GABA e Glutamato, com seus respectivos papéis na saúde mental."
   },
@@ -89,7 +89,7 @@ export const slides: Slide[] = [
       "Fármaco Antagonista (Bloqueio): É a 'chave falsa'. Ela entra na fechadura perfeitamente, mas não gira. Pior: ela fica lá presa, impedindo que a chave verdadeira (neurotransmissor) entre. (ex: Antipsicóticos bloqueiam o receptor de dopamina, impedindo alucinações).",
       "Agonista Parcial: Ativa o receptor, mas de forma 'fraca' (não gira a chave até o fim). Útil para equilibrar sistemas."
     ],
-    imageUrl: new URL('../assets/images/agonistas-antagonistas.jpg', import.meta.url).href,
+    imageUrl: new URL('../../assets/images/agonistas-antagonistas.jpg', import.meta.url).href,
     imageAlt: "Ilustração dos mecanismos básicos de fármacos e receptores: Agonistas, Antagonistas e Inibidores de recaptação",
     audioDescription: "A imagem mostra mecanismos de fármacos. O agonista se liga e ativa o receptor, causando estimulação. O antagonista se liga, mas funciona como um escudo, bloqueando a ativação. O inibidor de recaptação impede a reciclagem, causando acúmulo prolongado do neurotransmissor.",
     analogy: "O agonista é uma chave que entra na fechadura e abre a porta. O antagonista é uma chave falsa que entra na fechadura e emperra.",
@@ -104,7 +104,7 @@ export const slides: Slide[] = [
       "Eficácia (Capacidade Intrínseca): O agonista total liga e acende a luz no máximo (Resposta Máxima).",
       "Agonista Parcial tem resposta intermediária. Antagonista bloqueia a resposta (Eficácia zero)."
     ],
-    imageUrl: new URL('../assets/images/afinidade-eficacia.jpg', import.meta.url).href,
+    imageUrl: new URL('../../assets/images/afinidade-eficacia.jpg', import.meta.url).href,
     imageAlt: "Esquema visual mostrando Afinidade (alta vs baixa) e Eficácia (agonista total, parcial e antagonista)",
     audioDescription: "Na ilustração, afinidade é mostrada por imãs puxando as moléculas com mais ou menos força para o receptor. A eficácia é representada por uma lâmpada: o agonista total acende a luz forte. O parcial acende a luz fraca. O antagonista não acende a luz.",
     psychologyNote: "'Ligar bem' (afinidade) não significa 'agir forte' (eficácia). Isso explica por que alguns bloqueadores potentes parecem não fazer nada até o neurotransmissor natural aparecer."
@@ -118,7 +118,7 @@ export const slides: Slide[] = [
       "Emax (Teto vertical): Resposta máxima que o fármaco consegue produzir. Mede a Eficácia máxima.",
       "Em escala logarítmica, a curva torna-se uma sigmoide simétrica."
     ],
-    imageUrl: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80",
+    imageUrl: new URL('../../assets/images/curva-concentracao-resposta.jpg', import.meta.url).href,
     imageAlt: "Gráfico abstrato simulando dados clínicos de concentração e efeito",
     audioDescription: `Audiodescrição detalhada do gráfico
 
