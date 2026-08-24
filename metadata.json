@@ -1,0 +1,6 @@
+{
+  "name": "PharmacoPsych",
+  "description": "App educativo interativo de psicofarmacologia com narração de slides e chatbot assistente baseado no Gemini.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

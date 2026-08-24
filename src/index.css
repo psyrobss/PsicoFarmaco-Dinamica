@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .text-size-normal {
+    font-size: 100%;
+  }
+  .text-size-large {
+    font-size: 110%;
+  }
+  .text-size-xlarge {
+    font-size: 125%;
+  }
+  
+  .theme-high-contrast {
+    filter: contrast(1.25) saturate(1.1);
+  }
+}
