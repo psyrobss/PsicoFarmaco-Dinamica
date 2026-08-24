@@ -3,7 +3,6 @@ import { Slide } from '../types';
 import { AudioDescriber } from './AudioDescriber';
 import { Lightbulb, Brain, Volume2, VolumeX, Edit3 } from 'lucide-react';
 import * as motion from 'motion/react-client';
-import { AnimatePresence } from 'motion/react';
 import { glossary } from '../data/content';
 import { useAccessibility } from '../contexts/AccessibilityContext';
 import { DoseResponseCurve } from './DoseResponseCurve';
@@ -46,7 +45,6 @@ export function SlideRenderer({ slide, onTermClick }: SlideRendererProps) {
   const [isNarrating, setIsNarrating] = useState(autoRead);
   const synthRef = useRef<SpeechSynthesis | null>(null);
   const [notes, setNotes] = useState(() => localStorage.getItem(`slide_notes_${slide.id}`) || '');
-  const [isImageOpen, setIsImageOpen] = useState(false);
 
   useEffect(() => {
     setIsNarrating(autoRead);
@@ -172,56 +170,14 @@ export function SlideRenderer({ slide, onTermClick }: SlideRendererProps) {
               )}
             </div>
           ) : slide.imageUrl && (
-            <>
-              <div 
-                className="aspect-video bg-slate-100 rounded-lg flex flex-col items-center justify-center border border-slate-200 shadow-sm relative group overflow-hidden cursor-pointer"
-                onClick={() => setIsImageOpen(true)}
-              >
-                <img src={slide.imageUrl} alt={slide.imageAlt || 'Ilustração do conceito'} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
-                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors flex items-center justify-center">
-                  <div className="bg-white/90 p-2 rounded-full opacity-0 group-hover:opacity-100 transform scale-75 group-hover:scale-100 transition-all shadow-md">
-                    <ZoomIn className="w-6 h-6 text-slate-800" />
-                  </div>
+            <div className="aspect-video bg-slate-100 rounded-lg flex flex-col items-center justify-center border border-slate-200 shadow-sm relative group overflow-hidden">
+              <img src={slide.imageUrl} alt={slide.imageAlt || 'Ilustração do conceito'} className="w-full h-full object-cover" />
+              {slide.audioDescription && (
+                <div className="absolute bottom-3 right-3">
+                  <AudioDescriber text={slide.audioDescription} />
                 </div>
-                {slide.audioDescription && (
-                  <div className="absolute bottom-3 right-3 z-10">
-                    <AudioDescriber text={slide.audioDescription} />
-                  </div>
-                )}
-              </div>
-
-              <AnimatePresence>
-                {isImageOpen && (
-                  <motion.div 
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    exit={{ opacity: 0 }}
-                    className="fixed inset-0 z-50 flex items-center justify-center p-4 md:p-10 bg-slate-900/95 backdrop-blur-sm"
-                    onClick={() => setIsImageOpen(false)}
-                  >
-                    <button 
-                      className="absolute top-6 right-6 p-2 bg-white/10 hover:bg-white/20 text-white rounded-full transition-colors"
-                      onClick={() => setIsImageOpen(false)}
-                    >
-                      <X className="w-8 h-8" />
-                    </button>
-                    <motion.div 
-                      initial={{ scale: 0.9, y: 20 }}
-                      animate={{ scale: 1, y: 0 }}
-                      exit={{ scale: 0.9, y: 20 }}
-                      className="relative max-w-5xl max-h-[85vh] w-full bg-slate-900 rounded-lg overflow-hidden shadow-2xl flex items-center justify-center"
-                      onClick={e => e.stopPropagation()}
-                    >
-                      <img 
-                        src={slide.imageUrl} 
-                        alt={slide.imageAlt || 'Ilustração expandida'} 
-                        className="max-w-full max-h-[85vh] object-contain"
-                      />
-                    </motion.div>
-                  </motion.div>
-                )}
-              </AnimatePresence>
-            </>
+              )}
+            </div>
           )}
 
           {slide.psychologyNote && (
